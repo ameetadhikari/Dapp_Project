@@ -26,8 +26,8 @@ export const getStudentData = async (req: Request, res: Response) => {
     const { student } = req.params;
     console.log(student);
 
-    // We will create a variable with a type of WeatherData
-    let finalStudentData: WeatherData;
+    // We will create a variable with a type of StudentData
+    let finalStudentData: StudentData;
 
     // We will use an if statement to check which student was passed in
     if (student === 'Amit') {

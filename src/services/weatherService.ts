@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
 // import { storeWeatherData } from '../helpers/helpers';
 
-export const generateAmitMarkData = (): WeatherData => {
+export const generateAmitMarkData = (): StudentData => {
   const generateStudentData = {
     city: 'Amit',
     temperature: faker.number.int({ min: -15, max: 30 }),
@@ -14,8 +14,8 @@ export const generateAmitMarkData = (): WeatherData => {
 
   return generateStudentData;
 };
-export const generateRajuMarkData = (): WeatherData => {
-  const generateStudentData: WeatherData = {
+export const generateRajuMarkData = (): StudentData => {
+  const generateStudentData: StudentData = {
     city: 'Raju',
     temperature: faker.number.int({ min: -15, max: 30 }),
     humidity: faker.number.int({ min: 79, max: 86 }),
@@ -27,7 +27,7 @@ export const generateRajuMarkData = (): WeatherData => {
 
   return generateStudentData;
 };
-export const generateKabirMarkData = (): WeatherData => {
+export const generateKabirMarkData = (): StudentData => {
   const generateStudentData = {
     city: 'Kabir',
     temperature: faker.number.int({ min: -15, max: 30 }),
@@ -40,7 +40,7 @@ export const generateKabirMarkData = (): WeatherData => {
 
   return generateStudentData;
 };
-export const generateSujitMarkData = (): WeatherData => {
+export const generateSujitMarkData = (): StudentData => {
   const generateStudentData = {
     city: 'Sujit',
     temperature: faker.number.int({ min: -15, max: 30 }),
