@@ -1,29 +1,55 @@
 import { faker } from '@faker-js/faker';
 // import { storeWeatherData } from '../helpers/helpers';
 
-export const generateLondonWeatherData = (): WeatherData => {
-  const generatedWeatherData = {
-    city: 'London',
+export const generateAmitMarkData = (): WeatherData => {
+  const generateStudentData = {
+    city: 'Amit',
     temperature: faker.number.int({ min: -15, max: 30 }),
     humidity: faker.number.int({ min: 79, max: 86 }),
     wind: faker.number.int({ min: 2, max: 78 }),
     rain: faker.number.int({ min: 65, max: 75 }),
   };
 
-  //   storeWeatherData{generatedWeatherData}.catch(console.error);
+  //   storeStudentData{generateStudentData}.catch(console.error);
 
-  return generatedWeatherData;
+  return generateStudentData;
 };
-export const generateDublinWeatherData = (): WeatherData => {
-  const generatedWeatherData: WeatherData = {
-    city: 'Dublin',
+export const generateRajuMarkData = (): WeatherData => {
+  const generateStudentData: WeatherData = {
+    city: 'Raju',
     temperature: faker.number.int({ min: -15, max: 30 }),
     humidity: faker.number.int({ min: 79, max: 86 }),
     wind: faker.number.int({ min: 2, max: 78 }),
     rain: faker.number.int({ min: 65, max: 75 }),
   };
 
-  //   storeWeatherData{generatedWeatherData}.catch(console.error);
+  //   storeWeatherData{generateStudentData}.catch(console.error);
 
-  return generatedWeatherData;
+  return generateStudentData;
+};
+export const generateKabirMarkData = (): WeatherData => {
+  const generateStudentData = {
+    city: 'Kabir',
+    temperature: faker.number.int({ min: -15, max: 30 }),
+    humidity: faker.number.int({ min: 79, max: 86 }),
+    wind: faker.number.int({ min: 2, max: 78 }),
+    rain: faker.number.int({ min: 65, max: 75 }),
+  };
+
+  //   storeStudentData{generateStudentData}.catch(console.error);
+
+  return generateStudentData;
+};
+export const generateSujitMarkData = (): WeatherData => {
+  const generateStudentData = {
+    city: 'Sujit',
+    temperature: faker.number.int({ min: -15, max: 30 }),
+    humidity: faker.number.int({ min: 79, max: 86 }),
+    wind: faker.number.int({ min: 2, max: 78 }),
+    rain: faker.number.int({ min: 65, max: 75 }),
+  };
+
+  //   storeStudentData{generateStudentData}.catch(console.error);
+
+  return generateStudentData;
 };

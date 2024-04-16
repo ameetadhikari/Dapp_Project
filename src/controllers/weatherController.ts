@@ -1,15 +1,17 @@
 import { Request, Response } from 'express';
 import {
-  generateDublinWeatherData,
-  generateLondonWeatherData,
+  generateAmitMarkData,
+  generateRajuMarkData,
+  generateKabirMarkData,
+  generateSujitMarkData,
 } from '../services/weatherService.js';
 import { validationResult } from 'express-validator';
 /**
- * Gets the weather data for a city
+ * Gets the weather data for a student
  * @param req the request object
  * @param res the response object
  */
-export const getWeatherData = async (req: Request, res: Response) => {
+export const getStudentData = async (req: Request, res: Response) => {
   // Check if there are any validation errors
   const errors = validationResult(req);
   // We will log them and send a 400 status code
@@ -20,25 +22,29 @@ export const getWeatherData = async (req: Request, res: Response) => {
   }
   // We will use a try catch block to catch any errors
   try {
-    // Get the city param from the request
-    const { city } = req.params;
-    console.log(city);
+    // Get the student param from the request
+    const { student } = req.params;
+    console.log(student);
 
     // We will create a variable with a type of WeatherData
-    let finalWeatherData: WeatherData;
+    let finalStudentData: WeatherData;
 
-    // We will use an if statement to check which city was passed in
-    if (city === 'london') {
-      console.log(generateLondonWeatherData());
-      finalWeatherData = generateLondonWeatherData();
-    } else if (city === 'dublin') {
-      finalWeatherData = generateDublinWeatherData();
+    // We will use an if statement to check which student was passed in
+    if (student === 'Amit') {
+      console.log(generateAmitMarkData());
+      finalStudentData = generateAmitMarkData();
+    } else if (student === 'Raju') {
+      finalStudentData = generateRajuMarkData();
+    } else if (student === 'Kabir') {
+      finalStudentData = generateKabirMarkData();
+    } else if (student === 'Sujit') {
+      finalStudentData = generateSujitMarkData();
     } else {
-      // If the city is not london or dublin, we will throw an error
-      res.status(404).send('City not found');
+      // If the student is not london or dublin, we will throw an error
+      res.status(404).send('student not found');
       return;
     }
-    res.status(200).json(finalWeatherData);
+    res.status(200).json(finalStudentData);
   } catch (error) {
     // If there is an error, we will log it and send a 500 status code
     res.status(500).send('Error in fetching weather data');

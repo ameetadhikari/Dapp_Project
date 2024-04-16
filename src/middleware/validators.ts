@@ -1,5 +1,5 @@
 import { param } from 'express-validator';
-export const validateCityName = param('city')
+export const validateStudentName = param('student')
   .isString()
-  .isIn(['london', 'dublin'])
-  .withMessage('City name must be either london or dublin');
+  .isIn(['Amit', 'Raju','Kabir','Sujit'])
+  .withMessage('student name must be either london or dublin');
