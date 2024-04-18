@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-// import { storeWeatherData } from '../helpers/helpers';
+import { storeStudentData } from ../helpers/helpers';
 
 export const generateAmitMarkData = (): StudentData => {
   const generateStudentData = {
@@ -10,7 +10,7 @@ export const generateAmitMarkData = (): StudentData => {
     CN6005: faker.number.int({ min: 65, max: 75 }),
   };
 
-  //   storeStudentData{generateStudentData}.catch(console.error);
+    storeStudentData{generateStudentData}.catch(console.error);
 
   return generateStudentData;
 };
@@ -23,7 +23,7 @@ export const generateRajuMarkData = (): StudentData => {
     CN6005: faker.number.int({ min: 65, max: 75 }),
   };
 
-  //   storeWeatherData{generateStudentData}.catch(console.error);
+    storeWeatherData{generateStudentData}.catch(console.error);
 
   return generateStudentData;
 };
@@ -36,7 +36,7 @@ export const generateKabirMarkData = (): StudentData => {
     CN6005: faker.number.int({ min: 65, max: 75 }),
   };
 
-  //   storeStudentData{generateStudentData}.catch(console.error);
+    storeStudentData{generateStudentData}.catch(console.error);
 
   return generateStudentData;
 };
@@ -49,7 +49,7 @@ export const generateSujitMarkData = (): StudentData => {
     CN6005: faker.number.int({ min: 65, max: 75 }),
   };
 
-  //   storeStudentData{generateStudentData}.catch(console.error);
+    storeStudentData{generateStudentData}.catch(console.error);
 
   return generateStudentData;
 };
