@@ -4,7 +4,7 @@ import {
   generateRajuMarkData,
   generateKabirMarkData,
   generateSujitMarkData,
-} from '../services/weatherService.js';
+} from '../services/studentService.js';
 import { validationResult } from 'express-validator';
 /**
  * Gets the weather data for a student

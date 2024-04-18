@@ -1,7 +1,7 @@
 import express from 'express';
 import { validateStudentName } from '../middleware/validators.js';
-import { getStudentData } from '../controllers/weatherController.js';
+import { getStudentData } from '../controllers/studentController.js';
 const router = express.Router();
 
-router.get('/:city', validateStudentName, getStudentData);
+router.get('/:student', validateStudentName, getStudentData);
 export default router;

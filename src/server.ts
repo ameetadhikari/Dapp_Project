@@ -1,5 +1,5 @@
 import express from 'express';
-import studentRoute from './routes/weatherRoute.js';
+import studentRoute from './routes/studentRoute.js';
 import cors from "cors";
 
 // We will create an express app
