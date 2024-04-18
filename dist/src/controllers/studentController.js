@@ -1,4 +1,5 @@
-import { generateAmitMarkData, generateRajuMarkData, generateKabirMarkData, generateSujitMarkData, } from '../services/studentService.js';
+import { generateRajuMarkData, generateKabirMarkData, generateSujitMarkData, } from '../services/studentService.js';
+import { generateAmitMarkData } from '../services/generateAmitMarkData.js';
 import { validationResult } from 'express-validator';
 /**
  * Gets the weather data for a student

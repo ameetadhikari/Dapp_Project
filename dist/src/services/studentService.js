@@ -1,16 +1,5 @@
 import { faker } from '@faker-js/faker';
-// import { storeWeatherData } from '../helpers/helpers';
-export const generateAmitMarkData = () => {
-    const generateStudentData = {
-        student: 'Amit',
-        CN6000: faker.number.int({ min: 60, max: 90 }),
-        CN6035: faker.number.int({ min: 79, max: 86 }),
-        CN6008: faker.number.int({ min: 2, max: 78 }),
-        CN6005: faker.number.int({ min: 65, max: 75 }),
-    };
-    //   storeStudentData{generateStudentData}.catch(console.error);
-    return generateStudentData;
-};
+import { storeStudentData } from '../helpers/helpers.js';
 export const generateRajuMarkData = () => {
     const generateStudentData = {
         student: 'Raju',
@@ -19,7 +8,7 @@ export const generateRajuMarkData = () => {
         CN6008: faker.number.int({ min: 2, max: 78 }),
         CN6005: faker.number.int({ min: 65, max: 75 }),
     };
-    //   storeWeatherData{generateStudentData}.catch(console.error);
+    storeStudentData(generateStudentData).catch(console.error);
     return generateStudentData;
 };
 export const generateKabirMarkData = () => {
@@ -30,7 +19,7 @@ export const generateKabirMarkData = () => {
         CN6008: faker.number.int({ min: 2, max: 78 }),
         CN6005: faker.number.int({ min: 65, max: 75 }),
     };
-    //   storeStudentData{generateStudentData}.catch(console.error);
+    storeStudentData(generateStudentData).catch(console.error);
     return generateStudentData;
 };
 export const generateSujitMarkData = () => {
@@ -41,7 +30,7 @@ export const generateSujitMarkData = () => {
         CN6008: faker.number.int({ min: 2, max: 78 }),
         CN6005: faker.number.int({ min: 65, max: 75 }),
     };
-    //   storeStudentData{generateStudentData}.catch(console.error);
+    storeStudentData(generateStudentData).catch(console.error);
     return generateStudentData;
 };
 //# sourceMappingURL=studentService.js.map
